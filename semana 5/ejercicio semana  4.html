@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+    <link rel="stylesheet" href="estilos de formularios semana 4.css">
+</head>
+<body style="background-color: grey ;">
+    <center>
+    <header>
+        <img src="img/incapp.png" width="90" height="100" alt="incap">
+        <h1> LISTA Y FORMULARIO</h1>
+        <h2>MENU DE NAVEGACION</h2>
+    </header>
+</center>
+<nav>
+    <ul>
+        <li type="disc" style="color:black">home</li>
+        <li type="square">productos</li>
+        <li type="circle"> servicios</li>
+        <li> Contacto</li>
+    </ul>
+</nav>
+<section>
+    <!--  method get pasa los datos por la url, a travez de parametros//method post pasa los datos de forma interna( nose ven)-->
+    <form action="datos.php" method="post">
+        <!-- seccion de marco de formulario -->
+        <fieldset>
+            <!-- seccion de de ingreso de nombre -->
+            <label> nombre completo </label>
+            <input name="nombre" type="text" placeholder="ingrese su nombre completo" required="" >
+            <br><br>
+
+            <!-- seccion de e-mail -->
+            <label> email</label>
+            <input name="email" type="email" placeholder="ingrese su email" required="" >
+
+            <!-- seccion de contraseña -->
+            <label>contraeña</label>
+            <input name="contraseña" type="password" placeholder="ingrese su contraseña" required="" >
+            <br><br>
+
+            <!-- seccion de hobbies -->
+            <label> seccion de tus hobbies </label>
+            <br>
+            <input name="cine" type="checkbox"> la paja<br>
+            <input name="lectura" type="checkbox"> jugar pro evolution soccer 2013<br>
+            <input name="deporte" type="checkbox"> comer pan con limon<br>
+            <br>
+
+            <!-- seleccionar opcion de lista -->
+            <label> Estado civil </label><br>
+            <input name="estcivil" type="radio" value="casado" >casado(a) <br>
+            <input name="estcivil" type="radio" value="soltero" > soltero <br>
+            <input name="estcivil" type="radio" value="viudo" > viudo <br>
+            <br>
+            <br>
+
+            <!-- seleccionar opcion lista -->
+            <label> PROGRAMAS TECNINOS</label>
+            <select name="select">
+                <option> seleccione programa... </option>
+                <option> sistemas</option>
+                <option> diseños graficos </option>
+                <option> contabilidad </option>
+
+            </select>
+            <br>
+            <br>
+            <label> tu comentario</label> <br>
+            <textarea name="mensaje" rows="5" cols="40"></textarea>
+            </fieldset>
+            <br>
+            <br>
+            <!-- seccion de botones formulario submit: enviar datos cancel: borrar datos ingresados -->
+            <button type="submit"> enviar</button>
+            <button type="reset"> cancelar</button>
+            <br>
+            <br>
+            </form>
+            </section>
+            <!-- seccion de pie de pagina -->
+            <footer>
+                derechos reservados &copy;2022&#64; NOMBRE STD
+            
+            </footer>
+             
+</section>
+    
+</body>
+</html>
